@@ -1,0 +1,18 @@
+package com.bikkadit.frist;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Simple {
+	public Logger logger = LoggerFactory.getLogger(Simple.class);
+	@Bean
+	public String get() {
+		logger.info("Every things look right");
+		return "This is simple class";
+		
+	}
+	
+}
